@@ -5,12 +5,8 @@ import {fetchAndGoToAlbum} from '../action-creators/albums';
 import {Link} from 'react-router';
 
 export default class Albums extends React.Component {
-  componentDidMount() {
-    console.log(this.props.params)
-  }
   render () {
     const albums = this.props.albums || []
-    console.log(albums)
     return (
       <div>
         <h3>Albums</h3>
